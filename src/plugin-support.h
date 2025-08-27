@@ -27,6 +27,23 @@ extern "C" {
 #include <stdarg.h>
 #include <string.h>
 
+#ifdef ENABLE_FRONTEND_API
+#include <obs-frontend-api.h>
+#endif
+
+#ifdef ENABLE_QT
+#include <QWidget>
+#include <QDockWidget>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QPushButton>
+#include <QTimer>
+#include <QPainter>
+#include <QImage>
+#include <QPixmap>
+#endif
+
 extern const char *PLUGIN_NAME;
 extern const char *PLUGIN_VERSION;
 
